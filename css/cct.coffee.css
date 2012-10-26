@@ -1,0 +1,189 @@
+/* CCT Coffee Bar screen installations - Firebelly Design */
+
+@font-face {
+    font-family: 'ProximaNovaLight';
+    src: url('../fonts/proxima_nova_light-webfont.eot');
+    src: url('../fonts/proxima_nova_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima_nova_light-webfont.woff') format('woff'),
+         url('../fonts/proxima_nova_light-webfont.ttf') format('truetype'),
+         url('../fonts/proxima_nova_light-webfont.svg#ProximaNovaLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('../fonts/proxima_nova_reg-webfont.eot');
+    src: url('../fonts/proxima_nova_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima_nova_reg-webfont.woff') format('woff'),
+         url('../fonts/proxima_nova_reg-webfont.ttf') format('truetype'),
+         url('../fonts/proxima_nova_reg-webfont.svg#ProximaNovaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('../fonts/proxima_nova_sbold-webfont.eot');
+    src: url('../fonts/proxima_nova_sbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proxima_nova_sbold-webfont.woff') format('woff'),
+         url('../fonts/proxima_nova_sbold-webfont.ttf') format('truetype'),
+         url('../fonts/proxima_nova_sbold-webfont.svg#ProximaNovaSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
+	margin: 0;
+	font: 21px/25px 'ProximaNovaRegular', Helvetica, sans-serif;
+}
+body {
+	width: 1820px;
+	height: 980px;
+	padding: 50px;
+	margin: 0 auto;
+	background: #eceae9 url('../images/dots.png') 279px 59px no-repeat;
+    color: #bfbcb7;
+    -webkit-box-shadow: inset 0 0 90px #a09d9b;
+    box-shadow:         inset 0 0 90px #a09d9b;
+}
+
+#wrapper {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+}
+
+.clearfix:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+a { text-decoration: none; }
+
+#slide-nav {
+    width: 1835px;
+    background: url('../images/nav-grid.png') 0 7px no-repeat;
+    position: relative;
+    height: 120px;
+}
+#slide-nav ul {
+    position: absolute;
+    top:0;
+    left: 229px;
+    margin: 0;
+    padding: 0;
+}
+#slide-nav li {
+    display: block;
+    float: left;
+    width: 229px;
+    padding: 69px 0 0 0;
+    font: 15px/21px 'ProximaNovaRegular', sans-serif;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+#slide-nav li:nth-child(odd) {
+    width: 225px;
+    padding-left: 4px;
+}
+#slide-nav li.active {
+    color: #7E8A96;
+    padding-top: 60px;
+    border-top: 9px solid #A5B4C1;
+}
+
+#slide-title {
+    color: #7E8A96;
+    font: 57px/50px 'ProximaNovaLight', sans-serif;
+    text-transform: uppercase;
+    padding-left: 4px;
+    margin: 20px 0 80px;
+}
+#slide-title small {
+    display: block;
+    font: 15px/20px 'ProximaNovaRegular', sans-serif;
+    letter-spacing: .1em;
+}
+
+.content {
+    padding: 40px 0 0 229px;
+}
+#slide { 
+    position: relative;
+}
+#slide img {
+    display: block;
+    float: left;
+    margin: 85px 0 0 70px;
+}
+#slide h1 {
+    color: #342E24;
+    background: url('../images/slide-cap.png') no-repeat;
+    font: 95px/85px 'ProximaNovaLight', sans-serif;
+    text-transform: uppercase;
+    margin: 0 0 0 459px;
+    padding: 85px 0 0 4px;
+}
+#slide h1 strong {
+    color: #a5b4c1;
+    font-weight: normal;
+}
+#slide p {
+    color: #7E8A96;
+    font: 32px/46px 'ProximaNovaLight', sans-serif;
+    margin: 20px 0 0 459px;
+    width: 900px;
+    padding: 0 0 0 4px;
+}
+#slide p strong {
+ color: #342E24;
+ font-weight: normal;
+}
+
+/* 4 goals specific */
+#slide-4goals {
+    background: #504c44;
+    -webkit-box-shadow: inset 0 0 90px #1e1c19;
+    box-shadow:         inset 0 0 90px #1e1c19;
+}
+#slide-4goals #slide-nav li {
+    color:#fff; 
+}
+#slide-4goals #slide-nav li.active { color: #A5B4C1; }
+#slide-4goals #slide-title { display: none; }
+#slide-4goals #slide h1 {
+    font: 90px/86px 'ProximaNovaLight', sans-serif;
+    background: none;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+#slide-4goals #slide img {
+    margin: 60px 0 0;
+}
+.page-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920;
+    height: 1080;
+    z-index: 1;
+}
+
+
+.iosSlider {
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 1372px;
+    height: 600px;
+}
+.iosSlider .slider {
+    width: 100%;
+    height: 100%;
+}
+.iosSlider .slider .slide {
+    float: left;
+    width: 1372px;
+    height: 500px;
+}

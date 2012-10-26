@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+	<title>Chicago Community Trust</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/cct.coffee.css" />
+</head>
+<body class="intro" id="slide-4goals">
+<img class="page-bg" id="bg1"><img class="page-bg" id="bg2">
+
+<section id="wrapper" class="home">
+	<header>
+		<nav id="slide-nav">
+			<ul></ul>
+		</nav>
+	</header>
+	<section class="content">
+		<header><h1 id="slide-title">...</h1></header>
+		<div class="iosSlider">
+			<div id="slide" class="slider"></div>
+		</div>
+	</section>
+</section>
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/icanhaz.min.js"></script>
+<script src="js/jquery.easing.js"></script>
+<script src="js/jquery.iosslider.js"></script>
+<script src="js/cct.common.js"></script>
+<script src="js/cct.coffee.js"></script>
+
+<script type="text/html" id="slide">
+	<article class="slide">
+		<h1>{{{ body }}}</h1>
+		<img src="images/{{ icon }}">
+	</article>
+</script>
+
+</body>
+</html>
