@@ -51,7 +51,8 @@ CCT.Coffee = (function() {
 			onSlideComplete: _slideComplete,
 			infiniteSlider: true,
 			keyboardControls: true,
-			autoSlide: true
+			autoSlide: true,
+			autoSlideTimer: 8000
 		});
 	}
 
