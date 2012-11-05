@@ -6,16 +6,8 @@ CCT.Coffee = (function() {
 
 	function _init() {
 		_slideNav = $('#slide-nav ul')
-
-		// retrieve JSON data
-		$.ajax({
-			url: $('body').attr('id').replace('slide-','')+'.json',
-			dataType: 'json',
-			success: function(data) {
-				_slideshow = data;
-				_init_slideshow();
-			}
-		});
+		_slideshow = slideshow_data;
+		_init_slideshow();
 	}
 
 	function _init_slideshow() {
